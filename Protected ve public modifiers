@@ -45,10 +45,13 @@ public class First {
 
 }
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Protected Modifier aynı paket içindekiler erişebilirsadce bi de 
 //classları protected yapmak mantıksız gene.
+///Defeult ve protected farkı kalıtımda protectedlar farklı sınıflarda kullanılablir ama
+default da kullanılmaz protecteddan dasha özel bir yapısı var
 
 package AaClases;
 
