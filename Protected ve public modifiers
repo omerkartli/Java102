@@ -1,0 +1,83 @@
+//public modifer bütün sınıflardan ve paketlerden erişilebilir. 
+
+//Metodların balına da public koy
+
+//
+
+
+
+package AAClasesSecond;
+
+import AaClases.First;
+
+public class Second {
+    public static void main(String[] args) {
+        First b= new First("Sınıftan sınıfa Kodluyoruz");
+        System.out.println(b.str);
+    }
+}
+
+
+
+package AaClases;
+
+public class Main {
+    public static void main(String[] args) {
+        First a= new First("hello access Modifers");
+        System.out.println(a.str);
+
+
+    }
+}
+
+
+
+package AaClases;
+
+public class First {
+
+    public String str;
+
+    public First(String str){
+        this.str=str;
+
+    }
+
+}
+
+
+
+//Protected Modifier aynı paket içindekiler erişebilirsadce bi de 
+//classları protected yapmak mantıksız gene.
+
+package AaClases;
+
+public class First {
+
+    protected String str;
+
+    public First(String str){
+        this.str=str;
+
+    }
+    protected void show(){
+        System.out.println(this.str);
+    }
+
+}
+
+
+package AaClases;
+
+public class Main {
+    public static void main(String[] args) {
+        First a= new First("hello access Modifers");
+        System.out.println(a.str);
+
+
+    }
+}
+
+
+
+
