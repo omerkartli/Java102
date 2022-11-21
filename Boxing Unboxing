@@ -1,0 +1,15 @@
+package Wrapper;
+
+public class BoxingUnboxing {
+    public static void main(String[] args) {
+        int a;
+        Integer b=a; //Integer.valueOf(a);
+
+        unboxing
+        Integer c;
+
+        int d=c;//
+
+        int i =c.intValue();// gereksis unboxing
+    }
+}
