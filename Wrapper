@@ -1,0 +1,15 @@
+package Wrapper;
+
+public class Wrapper { //colllection ve jenerik yapılarda kullanılır
+    
+    public static void main(String[] args) {
+        String a= "10";
+        int b =20;
+        System.out.println(a+b);
+        int c= Integer.parseInt(a);
+        System.out.println(b+c);
+
+        System.out.println(Integer.max(2,5));
+        System.out.println(Integer.sum(15,25));
+    }
+}
