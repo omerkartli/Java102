@@ -1,0 +1,31 @@
+package Generic;
+
+public class Main {
+    public static void main(String[] args) {
+        String str="111235";
+        String str2="";
+        Nullable n=new Nullable(str);
+        n.run();
+        Integer a= null;
+        NullableInt m=new NullableInt(a);
+        m.run();
+
+        NullableGenel <Integer> r= new NullableGenel<>(10)   ;
+        r.run();
+
+        Integer b =12;
+
+        String l="pat";
+
+        Double d=3.24;
+
+
+        Test<Integer,String,Double> t=new Test<>(b,l,d);
+        t.showInfo();
+
+        t.setObj1(122);
+
+
+
+    }
+}
