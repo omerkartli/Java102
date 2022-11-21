@@ -1,0 +1,133 @@
+package Generic;
+
+public class NullableGenel <T> {
+    private final T value;
+
+    public NullableGenel(T value) {
+        this.value = value;
+    }
+
+    public T getValue() {
+        return this.value;
+    }
+
+    public boolean isNull() {
+        return this.getValue() == null;
+    }
+
+    public void run() {
+        if (isNull()) {
+            System.out.println("Bu değer atanmaşttır");
+        } else {
+            System.out.println(this.value.toString());
+        }
+    }
+}
+
+
+package Generic;
+
+public class NullableInt {
+    private  final Integer value;
+
+    public NullableInt(Integer value) {
+        this.value = value;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+    public  boolean isNull(){
+        return this.getValue()==null;
+    }
+    public void run(){
+        if(isNull()){
+            System.out.println("Bu atanıştır" );
+        }
+        else {
+            System.out.println(this.value);
+        }
+
+    }
+}
+
+
+
+package Generic;
+
+public class Nullable {
+    private final String value;
+
+    public Nullable(String value){
+        this.value=value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+    public  boolean isNull(){
+        return this.getValue()==null;
+    }
+    public void run(){
+        if(isNull()){
+            System.out.println("Bu atanıştır" );
+        }
+        else {
+            System.out.println(this.value);
+        }
+    }
+}
+
+
+
+package Generic;
+
+public class Test <T1,T2,T3>{
+
+    private  T1 obj1;
+    private  T2 obj2;
+    private  T3 obj3;
+
+    public Test(T1 obj1, T2 obj2, T3 obj3) {
+        this.obj1 = obj1;
+        this.obj2 = obj2;
+        this.obj3 = obj3;
+    }
+
+    public T1 getObj1() {
+        return obj1;
+    }
+
+    public void setObj1(T1 obj1) {
+        this.obj1 = obj1;
+    }
+
+    public T2 getObj2() {
+        return obj2;
+    }
+
+    public void setObj2(T2 obj2) {
+        this.obj2 = obj2;
+    }
+
+    public T3 getObj3() {
+        return obj3;
+    }
+
+    public void setObj3(T3 obj3) {
+        this.obj3 = obj3;
+    }
+    public void showInfo(){
+        System.out.println("T1:"+obj1.getClass().getSimpleName());
+
+        System.out.println("T2:"+obj2.getClass().getSimpleName());
+
+        System.out.println("T3:"+obj3.getClass().getSimpleName());
+    }
+}
+
+
+
+
+
+
