@@ -1,0 +1,52 @@
+package Generic;
+
+public class Main {
+    public static void main(String[] args) {
+        /*String str="111235";
+        String str2="";
+        Nullable n=new Nullable(str);
+        n.run();
+        Integer a= null;
+        NullableInt m=new NullableInt(a);
+        m.run();
+
+        NullableGenel <Integer> r= new NullableGenel<>(10)   ;
+        r.run();
+
+        Integer b =12;
+
+        String l="pat";
+
+        Double d=3.24;
+
+
+        Test<Integer,String,Double> t=new Test<>(b,l,d);
+        t.showInfo();
+
+        t.setObj1(122);*/
+
+        String[] arr ={"java", "102"};
+        Integer[] arri={1,2,3,4};
+        Character[] arrc={'A','B','O'};
+        GenericMethod.PrintArray(arr);
+        GenericMethod.PrintArray(arri);
+        GenericMethod.PrintArray(arrc);
+
+
+
+
+
+    }
+}
+-----------------------------------------------------------------------------------------------------
+
+package Generic;
+
+public class GenericMethod {
+    public static <T> void PrintArray(T[] array){
+        for(T i: array) {
+            System.out.println(i);
+        }
+    }
+}
+
