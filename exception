@@ -1,0 +1,21 @@
+package Exception;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void connectTCMB(){
+        //veri alma oprretorleri connectionlar vs vssvssv
+        System.out.println("kur verileri alındı");
+    }
+    public static void main(String[] args) {
+        System.out.println("Program başladı");
+        Scanner input=new Scanner(System.in);
+        double a, b;
+        a =input.nextDouble();
+        b=10;
+        System.out.println(b/a);
+
+        connectTCMB();
+
+    }
+}
